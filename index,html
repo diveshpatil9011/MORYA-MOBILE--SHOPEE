@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morya Mobile Shopee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+header {
+  background: #0b3d91;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9') no-repeat center center/cover;
+  height: 70vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.testimonials {
+  background: #eef2f7;
+  padding: 40px 20px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 5px solid #0b3d91;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #0b3d91;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+  </style>
+</head><body>
+  <header>
+    <img src="https://img.icons8.com/clouds/100/mobile.png" alt="Morya Logo">
+    <h1>Morya Mobile Shopee</h1>
+    <p>Your one-stop shop for smartphones</p>
+  </header>  <section class="hero">
+    <div>
+      <h1>Latest Mobile Deals</h1>
+      <p>Discover unbeatable prices and authentic products</p>
+    </div>
+  </section>  <section class="section">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro">
+        <h3>iPhone 15 Pro</h3>
+        <p>₹1,34,900</p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-1.jpg" alt="Galaxy S24 Ultra">
+        <h3>Samsung Galaxy S24 Ultra</h3>
+        <p>₹1,29,999</p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg" alt="Xiaomi 14 Ultra">
+        <h3>Xiaomi 14 Ultra</h3>
+        <p>₹89,999</p>
+      </div>
+    </div>
+  </section>  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <blockquote>
+      "Super fast delivery and genuine products! Highly recommend Morya Mobile Shopee."
+      <footer>- Sneha K.</footer>
+    </blockquote>
+    <blockquote>
+      "Excellent service and amazing phone collection."
+      <footer>- Raj P.</footer>
+    </blockquote>
+  </section>  <footer>
+    <p>Contact: +91-8788627532 | Location: kesnand road wagholi Pune-412207, MH</p>
+    <p>Follow us:
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">WhatsApp 8788627532</a>
+    </p>
+  </footer>
+</body></html>
