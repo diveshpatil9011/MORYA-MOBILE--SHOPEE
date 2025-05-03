@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Morya Mobile Shopee</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form onsubmit="return validateForm()">
+    Name: <input type="text" id="name" /><br />
+    Email: <input type="email" id="email" /><br />
+    <input type="submit" value="Submit" />
+  </form>
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      if (!name || !email) {
+        alert("Please fill all fields");
+        return false;
+      }
+      alert("Form submitted!");
+      return true;
+    }
+  </script>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
