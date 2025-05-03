@@ -1,81 +1,187 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>मोरया मोबाईल</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; background: #f4f6f8; color: #212529; }
-    header { background: #1f1f2e; color: #fff; padding: 1rem 2rem; text-align: center; }
-    header h1 { font-size: 2rem; color: #d90429; }
-    header p { color: #ffcc00; margin-top: 0.3rem; font-weight: 600; }
-    nav { margin-top: 1rem; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: 500; }
-    .section { padding: 2rem; max-width: 1200px; margin: auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-top: 2rem; }
-    .section h2 { text-align: center; margin-bottom: 1rem; color: #d90429; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-    .product { background: #fefefe; padding: 1rem; border: 1px solid #ddd; border-radius: 10px; text-align: center; }
-    .product img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
+
+    /* Header */
+    header {
+      background: #1f1f2e;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo h1 { color: #d90429; font-size: 1.8rem; }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .search-bar {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .search-bar input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://img.freepik.com/free-vector/electronic-sale-landing-page_23-2148720115.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    /* Section */
+    .section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #d90429;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
     .product h3 { margin: 0.5rem 0; font-size: 1.1rem; }
     .product p { margin: 0.2rem 0; }
     .discount { color: green; font-weight: bold; }
-    .contact-icons a { display: flex; align-items: center; margin: 0.5rem 0; color: #212529; text-decoration: none; font-weight: 500; }
-    .contact-icons a i { margin-right: 10px; font-size: 1.2rem; color: #d90429; }
-    footer { background: #1f1f2e; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 15px;
+      font-size: 22px;
+      border-radius: 50%;
+      text-align: center;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background: #1f1f2e;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>मोरया मोबाईल</h1>
-    <p>Sales & Accessories | बेस्ट मोबाईल रिपेअरिंग</p>
+    <div class="logo"><h1>मोरया मोबाईल</h1></div>
     <nav>
-      <a href="#products">Home</a>
+      <a href="#">Home</a>
       <a href="#products">Products</a>
-      <a href="#contact">About</a>
-      <a href="#contact">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="section" id="products">
-    <h2>Available Smartphones (10% OFF!)</h2>
-    <div class="products">
-      <!-- 20 Mobile Products -->
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro"><h3>iPhone 15 Pro</h3><p>₹1,35,000 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-1.jpg" alt="Samsung Galaxy S24 Ultra"><h3>Samsung Galaxy S24 Ultra</h3><p>₹1,20,000 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" alt="OnePlus 12"><h3>OnePlus 12</h3><p>₹64,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg" alt="Xiaomi 14 Ultra"><h3>Xiaomi 14 Ultra</h3><p>₹74,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-pro-1.jpg" alt="Vivo X100 Pro"><h3>Vivo X100 Pro</h3><p>₹65,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg" alt="Realme GT 5 Pro"><h3>Realme GT 5 Pro</h3><p>₹42,499 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Pixel 8 Pro"><h3>Google Pixel 8 Pro</h3><p>₹85,000 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-50-pro-1.jpg" alt="Motorola Edge 50 Pro"><h3>Motorola Edge 50 Pro</h3><p>₹34,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g42-5g-1.jpg" alt="Nokia G42 5G"><h3>Nokia G42 5G</h3><p>₹13,499 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno11-pro-1.jpg" alt="Oppo Reno11 Pro"><h3>Oppo Reno11 Pro</h3><p>₹39,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-30-5g-1.jpg" alt="Infinix Zero 30"><h3>Infinix Zero 30</h3><p>₹18,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/tecno/tecno-phantom-v-flip-1.jpg" alt="Tecno Phantom V Flip"><h3>Tecno Phantom V Flip</h3><p>₹49,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/itel/itel-s23-plus-1.jpg" alt="Itel S23 Plus"><h3>Itel S23 Plus</h3><p>₹13,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/iqoo/iqoo-12-1.jpg" alt="iQOO 12"><h3>iQOO 12</h3><p>₹54,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a55-5g-1.jpg" alt="Samsung Galaxy A55"><h3>Samsung Galaxy A55</h3><p>₹35,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-nord-ce4-1.jpg" alt="OnePlus Nord CE 4"><h3>OnePlus Nord CE 4</h3><p>₹24,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/poco/poco-x6-pro-1.jpg" alt="Poco X6 Pro"><h3>Poco X6 Pro</h3><p>₹26,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-13-pro-plus-5g-1.jpg" alt="Redmi Note 13 Pro+ 5G"><h3>Redmi Note 13 Pro+ 5G</h3><p>₹31,999 <span class="discount">10% OFF</span></p></div>
-      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-v30-1.jpg" alt="Vivo V30"><h3>Vivo V30</h3><p>₹32,999 <span class="discount">10% OFF</span></p></div>
-      </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search for mobiles, brands, offers...">
+  </div>
+
+  <section class="hero">
+    <h2>Big Summer Sale - Upto 20% OFF!</h2>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-icons">
-      <a href="tel:8788627532"><i class="fas fa-phone-alt"></i>Call: 8788627532</a>
-      <a href="https://wa.me/918788627532" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp: 8788627532</a>
-      <a href="https://www.instagram.com/moryamobile2023" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-      <a href="https://maps.app.goo.gl/2xs3qxtt2GaitwtV7" target="_blank"><i class="fas fa-map-marker-alt"></i>Store Location</a>
+  <section class="section" id="products">
+    <h2>Available Smartphones</h2>
+    <div class="products">
+      <!-- Example Product -->
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro">
+        <h3>iPhone 15 Pro</h3>
+        <p>₹1,35,000 <span class="discount">10% OFF</span></p>
+      </div>
+      <!-- Inside the <div class="products"> element -->
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro"><h3>iPhone 15 Pro</h3><p>₹1,35,000 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-1.jpg" alt="Samsung Galaxy S24 Ultra"><h3>Samsung Galaxy S24 Ultra</h3><p>₹1,20,000 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" alt="OnePlus 12"><h3>OnePlus 12</h3><p>₹64,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg" alt="Xiaomi 14 Ultra"><h3>Xiaomi 14 Ultra</h3><p>₹74,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-pro-1.jpg" alt="Vivo X100 Pro"><h3>Vivo X100 Pro</h3><p>₹65,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg" alt="Realme GT 5 Pro"><h3>Realme GT 5 Pro</h3><p>₹42,499 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Pixel 8 Pro"><h3>Google Pixel 8 Pro</h3><p>₹85,000 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-50-pro-1.jpg" alt="Motorola Edge 50 Pro"><h3>Motorola Edge 50 Pro</h3><p>₹34,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g42-5g-1.jpg" alt="Nokia G42 5G"><h3>Nokia G42 5G</h3><p>₹13,499 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno11-pro-1.jpg" alt="Oppo Reno11 Pro"><h3>Oppo Reno11 Pro</h3><p>₹39,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-30-5g-1.jpg" alt="Infinix Zero 30"><h3>Infinix Zero 30</h3><p>₹18,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/tecno/tecno-phantom-v-flip-1.jpg" alt="Tecno Phantom V Flip"><h3>Tecno Phantom V Flip</h3><p>₹49,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/itel/itel-s23-plus-1.jpg" alt="Itel S23 Plus"><h3>Itel S23 Plus</h3><p>₹13,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/iqoo/iqoo-12-1.jpg" alt="iQOO 12"><h3>iQOO 12</h3><p>₹54,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a55-5g-1.jpg" alt="Samsung Galaxy A55"><h3>Samsung Galaxy A55</h3><p>₹35,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-nord-ce4-1.jpg" alt="OnePlus Nord CE 4"><h3>OnePlus Nord CE 4</h3><p>₹24,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/poco/poco-x6-pro-1.jpg" alt="Poco X6 Pro"><h3>Poco X6 Pro</h3><p>₹26,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-13-pro-plus-5g-1.jpg" alt="Redmi Note 13 Pro+ 5G"><h3>Redmi Note 13 Pro+ 5G</h3><p>₹31,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-v30-1.jpg" alt="Vivo V30"><h3>Vivo V30</h3><p>₹32,999 <span class="discount">10% OFF</span></p></div>
+<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-narzo-70-1.jpg" alt="Realme Narzo 70"><h3>Realme Narzo 70</h3><p>₹14,999 <span class="discount">10% OFF</span></p></div>
     </div>
   </section>
+
+  <a href="https://wa.me/918788627532" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <footer>
     <p>&copy; 2025 मोरया मोबाईल. All rights reserved.</p>
