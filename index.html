@@ -18,12 +18,49 @@ header {
   background: #0b3d91;
   color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 header img {
   height: 60px;
-  margin-bottom: 10px;
+}
+
+header h1 {
+  margin-left: 10px;
+  font-size: 1.8rem;
+}
+
+nav {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  width: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+nav a {
+  padding: 10px;
+  color: #0b3d91;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+nav a:last-child {
+  border-bottom: none;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .hero {
@@ -97,12 +134,27 @@ footer a {
   text-decoration: none;
 }
 
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
   </style>
 </head><body>
   <header>
-    <img src="https://img.icons8.com/clouds/100/mobile.png" alt="Morya Logo">
-    <h1>Morya Mobile Shopee</h1>
-    <p>Your one-stop shop for smartphones</p>
+    <div style="display: flex; align-items: center;">
+      <img src="https://img.icons8.com/ios-filled/100/ffffff/smartphone-tablet.png" alt="Logo">
+      <h1>Morya Mobile Shopee</h1>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="#support">Support</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#accessories">Accessories</a>
+      <a href="#location">Location</a>
+    </nav>
   </header>  <section class="hero">
     <div>
       <h1>Latest Mobile Deals</h1>
@@ -127,6 +179,29 @@ footer a {
         <p>₹89,999</p>
       </div>
     </div>
+  </section>  <section id="support" class="section">
+    <h2>Support</h2>
+    <p>Need help? Contact us via WhatsApp: <a href="https://wa.me/917219817005" target="_blank">+91-7219817005</a> or email: support@moryamobile.com</p>
+  </section>  <section id="feedback" class="section">
+    <h2>Feedback</h2>
+    <p>We value your feedback. Let us know how we can improve our service!</p>
+    <form action="#" method="post">
+      <input type="text" placeholder="Your Name" required style="padding: 10px; width: 100%; margin-bottom: 10px;">
+      <textarea placeholder="Your Feedback" required style="padding: 10px; width: 100%; height: 100px;"></textarea><br>
+      <button type="submit" style="margin-top: 10px; padding: 10px 20px; background: #0b3d91; color: white; border: none; border-radius: 5px;">Submit</button>
+    </form>
+  </section>  <section id="accessories" class="section">
+    <h2>Accessories</h2>
+    <ul>
+      <li>Tempered Glass Protectors</li>
+      <li>Back Covers & Cases</li>
+      <li>Wireless Earbuds</li>
+      <li>Fast Chargers & Cables</li>
+      <li>Bluetooth Speakers</li>
+    </ul>
+  </section>  <section id="location" class="section">
+    <h2>Find Us Here</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.15018438077!2d73.8146122!3d18.516206599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfbadc7e03cf%3A0x3d20c2fbe1e3950f!2sMorya%20Mobile%20Shopee!5e0!3m2!1sen!2sin!4v1683914022889!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
   </section>  <section class="testimonials">
     <h2>What Our Customers Say</h2>
     <blockquote>
@@ -138,11 +213,13 @@ footer a {
       <footer>- Raj P.</footer>
     </blockquote>
   </section>  <footer>
-    <p>Contact: +91-8788627532 | Location: kesnand road wagholi Pune-412207, MH</p>
+    <p>Contact: +91-7219817005 | <a href="https://maps.app.goo.gl/cZ4rj8KbtsNkHcms5" target="_blank">Visit on Google Maps</a></p>
     <p>Follow us:
-      <a href="#">Facebook</a> |
-      <a href="#">Instagram</a> |
-      <a href="#">WhatsApp 8788627532</a>
+      <a href="https://www.instagram.com/moryamobile2023" target="_blank">Instagram</a>
     </p>
-  </footer>
-</body></html>
+  </footer>  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script></body></html>
