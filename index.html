@@ -104,6 +104,33 @@
     .product p { margin: 0.2rem 0; }
     .discount { color: green; font-weight: bold; }
 
+    /* Contact Icons */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-icons a {
+      color: #212529;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .contact-icons i {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+      color: #d90429;
+    }
+
+    .contact-icons span {
+      display: block;
+      margin-top: 0.2rem;
+    }
+
     /* WhatsApp Float */
     .whatsapp-float {
       position: fixed;
@@ -125,24 +152,6 @@
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
-    }
-
-    .contact-icons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    .contact-icons a {
-      color: #d90429;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    .contact-icons i {
-      margin-right: 0.5rem;
     }
   </style>
 </head>
@@ -167,7 +176,6 @@
   <section class="section" id="products">
     <h2>Available Smartphones</h2>
     <div class="products">
-      <!-- Product Cards -->
       <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro"><h3>iPhone 15 Pro</h3><p>₹1,35,000 <span class="discount">10% OFF</span></p></div>
       <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-1.jpg" alt="Samsung Galaxy S24 Ultra"><h3>Samsung Galaxy S24 Ultra</h3><p>₹1,20,000 <span class="discount">10% OFF</span></p></div>
       <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" alt="OnePlus 12"><h3>OnePlus 12</h3><p>₹64,999 <span class="discount">10% OFF</span></p></div>
@@ -176,18 +184,24 @@
       <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg" alt="Realme GT 5 Pro"><h3>Realme GT 5 Pro</h3><p>₹42,499 <span class="discount">10% OFF</span></p></div>
       <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Pixel 8 Pro"><h3>Google Pixel 8 Pro</h3><p>₹85,000 <span class="discount">10% OFF</span></p></div>
       <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-50-pro-1.jpg" alt="Motorola Edge 50 Pro"><h3>Motorola Edge 50 Pro</h3><p>₹34,999 <span class="discount">10% OFF</span></p></div>
-      <!-- Add more products as needed -->
     </div>
   </section>
 
-  <!-- Contact Section only at the end -->
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <div class="contact-icons">
-      <a href="tel:8788627532"><i class="fas fa-phone-alt"></i>Call: 8788627532</a>
-      <a href="https://wa.me/918788627532" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp: 8788627532</a>
-      <a href="https://www.instagram.com/moryamobile2023" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-      <a href="https://maps.app.goo.gl/2xs3qxtt2GaitwtV7" target="_blank"><i class="fas fa-map-marker-alt"></i>Store Location</a>
+      <a href="https://wa.me/918788627532" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://www.instagram.com/moryamobile2023" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      <a href="https://maps.app.goo.gl/2xs3qxtt2GaitwtV7" target="_blank" title="Location">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Location</span>
+      </a>
     </div>
   </section>
 
