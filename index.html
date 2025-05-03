@@ -1,250 +1,123 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Morya Mobile Shopee</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>मोरया मोबाईल</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }body {
-  background-color: #f7f9fc;
-  color: #333;
-  position: relative;
-}
-
-header {
-  background: #0b3d91;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-
-header img {
-  height: 60px;
-}
-
-header h1 {
-  margin-left: 10px;
-  font-size: 1.8rem;
-}
-
-nav {
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  display: none;
-  flex-direction: column;
-  width: 150px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-}
-
-nav a {
-  padding: 10px;
-  color: #0b3d91;
-  text-decoration: none;
-  border-bottom: 1px solid #eee;
-}
-
-nav a:last-child {
-  border-bottom: none;
-}
-
-.menu-toggle {
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.hero {
-  background: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9') no-repeat center center/cover;
-  height: 70vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero p {
-  font-size: 1.2rem;
-}
-
-.section {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.product {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  padding: 20px;
-}
-
-.product img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.testimonials {
-  background: #eef2f7;
-  padding: 40px 20px;
-}
-
-blockquote {
-  font-style: italic;
-  border-left: 5px solid #0b3d91;
-  padding-left: 15px;
-  margin-bottom: 20px;
-}
-
-footer {
-  background: #0b3d91;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-footer a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 10px;
-}
-
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  text-decoration: none;
-}
-
+      background: #f2f2f2;
+      color: #222;
+    }
+    header {
+      background: black;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: red;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: yellow;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      background: white;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .testimonial {
+      margin-bottom: 1rem;
+    }
+    .owner {
+      text-align: center;
+    }
+    .owner img {
+      width: 200px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: black;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
   </style>
-</head><body>
+</head>
+<body>
   <header>
-    <div style="display: flex; align-items: center;">
-      <img src="https://img.icons8.com/ios-filled/100/ffffff/smartphone-tablet.png" alt="Logo">
-      <h1>Morya Mobile Shopee</h1>
-    </div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="menu">
-      <a href="#support">Support</a>
+    <img src="logo.png" alt="Morya Mobile Logo" />
+    <h1>मोरया मोबाईल</h1>
+    <nav>
+      <a href="#services">Services</a>
       <a href="#feedback">Feedback</a>
       <a href="#accessories">Accessories</a>
-      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>  <section class="hero">
-    <div>
-      <h1>Latest Mobile Deals</h1>
-      <p>Discover unbeatable prices and authentic products</p>
-    </div>
-  </section>  <section class="section">
-    <h2>Featured Products</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro">
-        <h3>iPhone 15 Pro</h3>
-        <p>₹1,34,900</p>
-      </div>
-      <div class="product">
-        <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-1.jpg" alt="Galaxy S24 Ultra">
-        <h3>Samsung Galaxy S24 Ultra</h3>
-        <p>₹1,29,999</p>
-      </div>
-      <div class="product">
-        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg" alt="Xiaomi 14 Ultra">
-        <h3>Xiaomi 14 Ultra</h3>
-        <p>₹89,999</p>
-      </div>
-    </div>
-  </section>  <section id="support" class="section">
-    <h2>Support</h2>
-    <p>Need help? Contact us via WhatsApp: <a href="https://wa.me/917219817005" target="_blank">+91-7219817005</a> or email: support@moryamobile.com</p>
-  </section>  <section id="feedback" class="section">
-    <h2>Feedback</h2>
-    <p>We value your feedback. Let us know how we can improve our service!</p>
-    <form action="#" method="post">
-      <input type="text" placeholder="Your Name" required style="padding: 10px; width: 100%; margin-bottom: 10px;">
-      <textarea placeholder="Your Feedback" required style="padding: 10px; width: 100%; height: 100px;"></textarea><br>
-      <button type="submit" style="margin-top: 10px; padding: 10px 20px; background: #0b3d91; color: white; border: none; border-radius: 5px;">Submit</button>
-    </form>
-  </section>  <section id="accessories" class="section">
-    <h2>Accessories</h2>
-    <ul>
-      <li>Tempered Glass Protectors</li>
-      <li>Back Covers & Cases</li>
-      <li>Wireless Earbuds</li>
-      <li>Fast Chargers & Cables</li>
-      <li>Bluetooth Speakers</li>
-    </ul>
-  </section>  <section id="location" class="section">
-    <h2>Find Us Here</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.15018438077!2d73.8146122!3d18.516206599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfbadc7e03cf%3A0x3d20c2fbe1e3950f!2sMorya%20Mobile%20Shopee!5e0!3m2!1sen!2sin!4v1683914022889!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-  </section>  <section class="testimonials">
+  </header>  <section id="services">
+    <h2>Our Services</h2>
+    <p>Sales & Accessories, Urgent Mobile Repairs, Multi-brand support (Samsung, Oppo, Vivo, Realme, Mi).</p>
+  </section>  <section id="feedback">
     <h2>What Our Customers Say</h2>
-    <blockquote>
-      "Super fast delivery and genuine products! Highly recommend Morya Mobile Shopee."
-      <footer>- Sneha K.</footer>
-    </blockquote>
-    <blockquote>
-      "Excellent service and amazing phone collection."
-      <footer>- Raj P.</footer>
-    </blockquote>
-  </section>  <footer>
-    <p>Contact: +91-7219817005 | <a href="https://maps.app.goo.gl/cZ4rj8KbtsNkHcms5" target="_blank">Visit on Google Maps</a></p>
-    <p>
-      Follow us:
-      <a href="https://www.instagram.com/moryamobile2023" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-    </p>
-  </footer>  <a href="https://wa.me/918788627432" class="whatsapp-button" target="_blank">
+    <div class="testimonial">
+      <p>"Best service and fast repairing" — <strong>Mayur Patil</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>"Supportive and friendly staff" — <strong>Khushi Tambe</strong></p>
+    </div>
+  </section>  <section id="owner" class="owner">
+    <h2>Owner</h2>
+    <img src="owner.jpg" alt="Kiran Tambe" />
+    <h3>Kiran Tambe</h3>
+    <p>Dedicated to providing the best service and trusted by hundreds of customers in the area.</p>
+  </section>  <section id="accessories">
+    <h2>Mobile Accessories</h2>
+    <p>Wide variety of chargers, headphones, covers, cables, and more.</p>
+  </section>  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:7219817005">7219817005</a></p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/moryamobile2023" target="_blank"><i class="fab fa-instagram"></i> moryamobile2023</a></p>
+    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/cZ4rj8KbtsNkHcms5" target="_blank">View on Google Maps</a></p>
+  </section>  <a href="https://wa.me/918788627432" class="floating-whatsapp" target="_blank">
     <i class="fab fa-whatsapp"></i>
-  </a>  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-    }
-  </script></body></html>
+  </a>  <footer>
+    <p>&copy; 2025 मोरया मोबाईल. All rights reserved.</p>
+  </footer>
+</body>
+</html>
