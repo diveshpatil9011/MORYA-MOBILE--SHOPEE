@@ -1,152 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>मोरया मोबाईल</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background: #111;
-      color: #fff;
-    }
-    header {
-      background: #000;
-      text-align: center;
-      padding: 20px;
-    }
-    header img {
-      width: 100px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: red;
-    }
-    .nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      background: #222;
-      padding: 10px;
-    }
-    .nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-    .section {
-      padding: 20px;
-      text-align: center;
-    }
-    .owner img {
-      width: 200px;
-      border-radius: 12px;
-      margin-top: 10px;
-    }
-    .testimonials {
-      background: #222;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 700px;
-    }
-    .testimonial {
-      margin-bottom: 15px;
-    }
-    footer {
-      background: #000;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-    }
-    .socials a {
-      margin: 0 10px;
-      color: #fff;
-      text-decoration: none;
-    }
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    }
-    .whatsapp-button i {
-      margin-right: 8px;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-      .nav {
-        flex-direction: column;
-      }
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f4f6f8; color: #212529; }
+    header { background: #1f1f2e; color: #fff; padding: 1rem 2rem; text-align: center; }
+    header h1 { font-size: 2rem; color: #d90429; }
+    header p { color: #ffcc00; margin-top: 0.3rem; font-weight: 600; }
+    nav { margin-top: 1rem; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: 500; }
+    .section { padding: 2rem; max-width: 1200px; margin: auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-top: 2rem; }
+    .section h2 { text-align: center; margin-bottom: 1rem; color: #d90429; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .product { background: #fefefe; padding: 1rem; border: 1px solid #ddd; border-radius: 10px; text-align: center; }
+    .product img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; }
+    .product h3 { margin: 0.5rem 0; font-size: 1.1rem; }
+    .product p { margin: 0.2rem 0; }
+    .discount { color: green; font-weight: bold; }
+    footer { background: #1f1f2e; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
-
-<header>
-  <img src="images/logo.png" alt="Morya Mobile Logo" />
-  <h1>मोरया मोबाईल</h1>
-  <p style="color:yellow;">Sales & Accessories | अर्जंट मोबाईल रिपेअरिंग</p>
-</header>
-
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="products.html">Products</a>
-  <a href="about.html">About</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<section class="section owner">
-  <h2>Owner: Kiran Tambe</h2>
-  <img src="images/owner.jpg" alt="Kiran Tambe" />
-</section>
-
-<section class="section testimonials">
-  <h2>What Our Customers Say</h2>
-  <div class="testimonial">
-    <strong>Mayur Patil:</strong> Best service and fast repairing.
-  </div>
-  <div class="testimonial">
-    <strong>Khushi Tambe:</strong> Supportive and friendly staff.
-  </div>
-</section>
-
-<section class="section">
-  <h2>Visit Us</h2>
-  <p><a href="https://maps.app.goo.gl/cZ4rj8KbtsNkHcms5" target="_blank">Google Maps Location</a></p>
-</section>
-
-<section class="section socials">
-  <h2>Connect With Us</h2>
-  <p>
-    <a href="https://www.instagram.com/moryamobile2023?igsh=MWY5MGo5bWl6YzU4dg==" target="_blank">
-      <i class="fab fa-instagram"></i> @moryamobile2023
-    </a>
-  </p>
-  <p>Call us: <a href="tel:7219817005">7219817005</a></p>
-</section>
-
-<a class="whatsapp-button" href="https://wa.me/8788627432" target="_blank">
-  <i class="fab fa-whatsapp"></i> Inquiry
-</a>
-
-<footer>
-  <p>&copy; 2025 Morya Mobile Shopee</p>
-</footer>
-
+  <header>
+    <h1>मोरया मोबाईल</h1>
+    <p>Sales & Accessories | बेस्ट मोबाईल रिपेअरिंग</p>
+    <nav>
+      <a href="#products">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">About</a>
+      <a href="#contact">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section class="section" id="products">
+    <h2>Available Smartphones (10% OFF!)</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro">
+        <h3>iPhone 15 Pro</h3>
+        <p>₹1,35,000 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-1.jpg" alt="Galaxy S24 Ultra">
+        <h3>Samsung Galaxy S24 Ultra</h3>
+        <p>₹1,20,000 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" alt="OnePlus 12">
+        <h3>OnePlus 12</h3>
+        <p>₹64,999 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg" alt="Xiaomi 14 Ultra">
+        <h3>Xiaomi 14 Ultra</h3>
+        <p>₹74,999 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-pro-1.jpg" alt="Vivo X100 Pro">
+        <h3>Vivo X100 Pro</h3>
+        <p>₹65,999 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg" alt="Realme GT 5 Pro">
+        <h3>Realme GT 5 Pro</h3>
+        <p>₹42,499 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Pixel 8 Pro">
+        <h3>Google Pixel 8 Pro</h3>
+        <p>₹85,000 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-50-pro-1.jpg" alt="Moto Edge 50 Pro">
+        <h3>Motorola Edge 50 Pro</h3>
+        <p>₹34,999 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g42-5g-1.jpg" alt="Nokia G42">
+        <h3>Nokia G42 5G</h3>
+        <p>₹13,499 <span class="discount">10% OFF</span></p>
+      </div>
+      <div class="product">
+        <img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno11-pro-1.jpg" alt="Oppo Reno11 Pro">
+        <h3>Oppo Reno11 Pro</h3>
+        <p>₹39,999 <span class="discount">10% OFF</span></p>
+      </div>
+    </div>
+  </section>  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Owner: Kiran Tambe</p>
+    <p>WhatsApp: <a href="https://wa.me/919999999999">+91 99999 99999</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/moryamobile">@moryamobile</a></p>
+    <p>Email: support@moryamobile.com</p>
+    <p><a href="https://www.google.com/maps">Google Maps Location</a></p>
+  </section>  <footer>
+    <p>&copy; 2025 मोरया मोबाईल. All rights reserved.</p>
+  </footer>
 </body>
 </html>
