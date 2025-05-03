@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
   <title>Products - Morya Mobile Shopee</title>
+  <style>
+    .product {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+      position: relative;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    .sale {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Our Products</h1>
-  <ul>
-    <li>iPhone 14</li>
-    <li>Samsung Galaxy S23</li>
-    <li>OnePlus 11</li>
-  </ul>
-  <a href="index.html">Back to Home</a>
+  <h1>Mobile Products</h1>
+  <div class="product">
+    <div class="sale">Sale</div>
+    <img src="iphone.jpg" alt="iPhone">
+    <h3>iPhone 14</h3>
+    <p>Price: ₹74,999</p>
+  </div>
+
+  <div class="product">
+    <img src="samsung.jpg" alt="Samsung">
+    <h3>Samsung Galaxy S23</h3>
+    <p>Price: ₹69,999</p>
+  </div>
+
+  <div class="product">
+    <div class="sale">Sale</div>
+    <img src="redmi.jpg" alt="Redmi">
+    <h3>Redmi Note 12</h3>
+    <p>Price: ₹12,999</p>
+  </div>
 </body>
 </html>
