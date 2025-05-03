@@ -126,6 +126,24 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+    .contact-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-icons a {
+      color: #d90429;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .contact-icons i {
+      margin-right: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -143,42 +161,26 @@
   </div>
 
   <section class="hero">
-    <h2>Big Summer Sale - Upto 20% OFF!</h2>
+    <h2>Explore the Latest Smartphones at मोरया मोबाईल</h2>
   </section>
 
   <section class="section" id="products">
     <h2>Available Smartphones</h2>
     <div class="products">
-      <!-- Example Product -->
-      <div class="product">
-        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro">
-        <h3>iPhone 15 Pro</h3>
-        <p>₹1,35,000 <span class="discount">10% OFF</span></p>
-      </div>
-      <!-- Inside the <div class="products"> element -->
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro"><h3>iPhone 15 Pro</h3><p>₹1,35,000 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-1.jpg" alt="Samsung Galaxy S24 Ultra"><h3>Samsung Galaxy S24 Ultra</h3><p>₹1,20,000 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" alt="OnePlus 12"><h3>OnePlus 12</h3><p>₹64,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg" alt="Xiaomi 14 Ultra"><h3>Xiaomi 14 Ultra</h3><p>₹74,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-pro-1.jpg" alt="Vivo X100 Pro"><h3>Vivo X100 Pro</h3><p>₹65,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg" alt="Realme GT 5 Pro"><h3>Realme GT 5 Pro</h3><p>₹42,499 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Pixel 8 Pro"><h3>Google Pixel 8 Pro</h3><p>₹85,000 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-50-pro-1.jpg" alt="Motorola Edge 50 Pro"><h3>Motorola Edge 50 Pro</h3><p>₹34,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g42-5g-1.jpg" alt="Nokia G42 5G"><h3>Nokia G42 5G</h3><p>₹13,499 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno11-pro-1.jpg" alt="Oppo Reno11 Pro"><h3>Oppo Reno11 Pro</h3><p>₹39,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-30-5g-1.jpg" alt="Infinix Zero 30"><h3>Infinix Zero 30</h3><p>₹18,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/tecno/tecno-phantom-v-flip-1.jpg" alt="Tecno Phantom V Flip"><h3>Tecno Phantom V Flip</h3><p>₹49,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/itel/itel-s23-plus-1.jpg" alt="Itel S23 Plus"><h3>Itel S23 Plus</h3><p>₹13,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/iqoo/iqoo-12-1.jpg" alt="iQOO 12"><h3>iQOO 12</h3><p>₹54,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a55-5g-1.jpg" alt="Samsung Galaxy A55"><h3>Samsung Galaxy A55</h3><p>₹35,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-nord-ce4-1.jpg" alt="OnePlus Nord CE 4"><h3>OnePlus Nord CE 4</h3><p>₹24,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/poco/poco-x6-pro-1.jpg" alt="Poco X6 Pro"><h3>Poco X6 Pro</h3><p>₹26,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-13-pro-plus-5g-1.jpg" alt="Redmi Note 13 Pro+ 5G"><h3>Redmi Note 13 Pro+ 5G</h3><p>₹31,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-v30-1.jpg" alt="Vivo V30"><h3>Vivo V30</h3><p>₹32,999 <span class="discount">10% OFF</span></p></div>
-<div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-narzo-70-1.jpg" alt="Realme Narzo 70"><h3>Realme Narzo 70</h3><p>₹14,999 <span class="discount">10% OFF</span></p></div>
+      <!-- Product Cards -->
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" alt="iPhone 15 Pro"><h3>iPhone 15 Pro</h3><p>₹1,35,000 <span class="discount">10% OFF</span></p></div>
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-1.jpg" alt="Samsung Galaxy S24 Ultra"><h3>Samsung Galaxy S24 Ultra</h3><p>₹1,20,000 <span class="discount">10% OFF</span></p></div>
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" alt="OnePlus 12"><h3>OnePlus 12</h3><p>₹64,999 <span class="discount">10% OFF</span></p></div>
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-ultra-1.jpg" alt="Xiaomi 14 Ultra"><h3>Xiaomi 14 Ultra</h3><p>₹74,999 <span class="discount">10% OFF</span></p></div>
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-pro-1.jpg" alt="Vivo X100 Pro"><h3>Vivo X100 Pro</h3><p>₹65,999 <span class="discount">10% OFF</span></p></div>
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg" alt="Realme GT 5 Pro"><h3>Realme GT 5 Pro</h3><p>₹42,499 <span class="discount">10% OFF</span></p></div>
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Pixel 8 Pro"><h3>Google Pixel 8 Pro</h3><p>₹85,000 <span class="discount">10% OFF</span></p></div>
+      <div class="product"><img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-50-pro-1.jpg" alt="Motorola Edge 50 Pro"><h3>Motorola Edge 50 Pro</h3><p>₹34,999 <span class="discount">10% OFF</span></p></div>
+      <!-- Add more products as needed -->
     </div>
   </section>
 
+  <!-- Contact Section only at the end -->
   <section class="section" id="contact">
     <h2>Contact Us</h2>
     <div class="contact-icons">
@@ -192,5 +194,9 @@
   <footer>
     <p>&copy; 2025 मोरया मोबाईल. All rights reserved.</p>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/918788627532" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
