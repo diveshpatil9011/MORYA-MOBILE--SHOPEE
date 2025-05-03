@@ -1,123 +1,152 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>मोरया मोबाईल</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f2f2f2;
-      color: #222;
+      background: #111;
+      color: #fff;
     }
     header {
-      background: black;
-      color: white;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      background: #000;
+      text-align: center;
+      padding: 20px;
     }
     header img {
-      height: 60px;
+      width: 100px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    h1 {
+      font-size: 2.5rem;
       color: red;
     }
-    nav {
-      margin-top: 0.5rem;
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #222;
+      padding: 10px;
     }
-    nav a {
-      color: yellow;
-      margin: 0 1rem;
+    .nav a {
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
     }
-    section {
-      padding: 2rem;
-      background: white;
-      margin: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .testimonial {
-      margin-bottom: 1rem;
-    }
-    .owner {
+    .section {
+      padding: 20px;
       text-align: center;
     }
     .owner img {
       width: 200px;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+    .testimonials {
+      background: #222;
+      margin: 20px auto;
+      padding: 20px;
       border-radius: 10px;
-      margin-bottom: 1rem;
+      max-width: 700px;
+    }
+    .testimonial {
+      margin-bottom: 15px;
     }
     footer {
-      background: black;
-      color: white;
-      padding: 1rem;
+      background: #000;
+      color: #ccc;
       text-align: center;
+      padding: 20px;
     }
-    .floating-whatsapp {
+    .socials a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .whatsapp-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #25d366;
+      background-color: #25d366;
       color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
+      padding: 10px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    .whatsapp-button i {
+      margin-right: 8px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .nav {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Morya Mobile Logo" />
-    <h1>मोरया मोबाईल</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#feedback">Feedback</a>
-      <a href="#accessories">Accessories</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>  <section id="services">
-    <h2>Our Services</h2>
-    <p>Sales & Accessories, Urgent Mobile Repairs, Multi-brand support (Samsung, Oppo, Vivo, Realme, Mi).</p>
-  </section>  <section id="feedback">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial">
-      <p>"Best service and fast repairing" — <strong>Mayur Patil</strong></p>
-    </div>
-    <div class="testimonial">
-      <p>"Supportive and friendly staff" — <strong>Khushi Tambe</strong></p>
-    </div>
-  </section>  <section id="owner" class="owner">
-    <h2>Owner</h2>
-    <img src="images/owner.jpg" alt="Kiran Tambe" />
-    <h3>Kiran Tambe</h3>
-    <p>Dedicated to providing the best service and trusted by hundreds of customers in the area.</p>
-  </section>  <section id="accessories">
-    <h2>Mobile Accessories</h2>
-    <p>Wide variety of chargers, headphones, covers, cables, and more.</p>
-  </section>  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> <a href="tel:7219817005">7219817005</a></p>
-    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/moryamobile2023" target="_blank"><i class="fab fa-instagram"></i> moryamobile2023</a></p>
-    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/cZ4rj8KbtsNkHcms5" target="_blank">View on Google Maps</a></p>
-  </section>  <a href="https://wa.me/918788627432" class="floating-whatsapp" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>  <footer>
-    <p>&copy; 2025 मोरया मोबाईल. All rights reserved.</p>
-  </footer>
+
+<header>
+  <img src="images/logo.png" alt="Morya Mobile Logo" />
+  <h1>मोरया मोबाईल</h1>
+  <p style="color:yellow;">Sales & Accessories | अर्जंट मोबाईल रिपेअरिंग</p>
+</header>
+
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="section owner">
+  <h2>Owner: Kiran Tambe</h2>
+  <img src="images/owner.jpg" alt="Kiran Tambe" />
+</section>
+
+<section class="section testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial">
+    <strong>Mayur Patil:</strong> Best service and fast repairing.
+  </div>
+  <div class="testimonial">
+    <strong>Khushi Tambe:</strong> Supportive and friendly staff.
+  </div>
+</section>
+
+<section class="section">
+  <h2>Visit Us</h2>
+  <p><a href="https://maps.app.goo.gl/cZ4rj8KbtsNkHcms5" target="_blank">Google Maps Location</a></p>
+</section>
+
+<section class="section socials">
+  <h2>Connect With Us</h2>
+  <p>
+    <a href="https://www.instagram.com/moryamobile2023?igsh=MWY5MGo5bWl6YzU4dg==" target="_blank">
+      <i class="fab fa-instagram"></i> @moryamobile2023
+    </a>
+  </p>
+  <p>Call us: <a href="tel:7219817005">7219817005</a></p>
+</section>
+
+<a class="whatsapp-button" href="https://wa.me/8788627432" target="_blank">
+  <i class="fab fa-whatsapp"></i> Inquiry
+</a>
+
+<footer>
+  <p>&copy; 2025 Morya Mobile Shopee</p>
+</footer>
+
 </body>
 </html>
